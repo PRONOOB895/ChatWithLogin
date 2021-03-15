@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class MainFrame extends JFrame {
     public MainFrame() {
-        add(new LoginPanelTest().panel);
+        add(new LoginPanelTest(this).panel);
 
         setSize(600, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

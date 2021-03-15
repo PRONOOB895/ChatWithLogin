@@ -16,6 +16,17 @@ public class LoginPanelTest {
     private JLabel passwordLabel;
     private JLabel usernameLabel;
 
+    public LoginPanelTest(JFrame frame) {
+        loginButton.addActionListener(e -> {
+            
+        });
+
+        signUpButton.addActionListener(e -> {
+            frame.setContentPane(new SignUpPanel().panel);
+            frame.validate();
+        });
+    }
+
     private void createUIComponents() {
         // TODO: place custom component creation code here
     }
